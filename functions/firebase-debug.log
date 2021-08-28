@@ -1,0 +1,43 @@
+[debug] [2021-08-28T20:05:04.610Z] ----------------------------------------------------------------------
+[debug] [2021-08-28T20:05:04.614Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DEEP RAJ\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-08-28T20:05:04.615Z] CLI Version:   9.14.0
+[debug] [2021-08-28T20:05:04.615Z] Platform:      win32
+[debug] [2021-08-28T20:05:04.615Z] Node Version:  v14.17.1
+[debug] [2021-08-28T20:05:04.616Z] Time:          Sun Aug 29 2021 01:35:04 GMT+0530 (India Standard Time)
+[debug] [2021-08-28T20:05:04.617Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-28T20:05:04.629Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-28T20:05:04.629Z] > authorizing via signed-in user (dpraj049@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2021-08-28T20:05:04.656Z] [hub] writing locator at C:\Users\DEEPRA~1\AppData\Local\Temp\hub-challange-6c24d.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@14 from host."}}
+[debug] [2021-08-28T20:05:04.691Z] defaultcredentials: writing to file C:\Users\DEEP RAJ\AppData\Roaming\firebase\dpraj049_gmail_com_application_default_credentials.json
+[debug] [2021-08-28T20:05:04.693Z] Setting GAC to C:\Users\DEEP RAJ\AppData\Roaming\firebase\dpraj049_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\DEEP RAJ\\AppData\\Roaming\\firebase\\dpraj049_gmail_com_application_default_credentials.json"}}
+[debug] [2021-08-28T20:05:04.694Z] > refreshing access token with scopes: []
+[debug] [2021-08-28T20:05:04.695Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-28T20:05:05.099Z] <<< HTTP RESPONSE 200 {"date":"Sat, 28 Aug 2021 20:05:05 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-28T20:05:05.269Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challange-6c24d/adminSdkConfig [none]
+[debug] [2021-08-28T20:05:06.390Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challange-6c24d/adminSdkConfig 200
+[debug] [2021-08-28T20:05:06.390Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challange-6c24d/adminSdkConfig {"projectId":"challange-6c24d","storageBucket":"challange-6c24d.appspot.com","locationId":"us-central"}
+[debug] [2021-08-28T20:05:06.498Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/challange-6c24d/sites 
+[debug] [2021-08-28T20:05:08.941Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/challange-6c24d/sites 200
+[debug] [2021-08-28T20:05:08.941Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/challange-6c24d/sites {"sites":[{"name":"projects/847130926240/sites/challange-6c24d","defaultUrl":"https://challange-6c24d.web.app","appId":"1:847130926240:web:dabb6b274fe6355fa2bdc5","type":"DEFAULT_SITE"}]}
+[debug] [2021-08-28T20:05:08.942Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challange-6c24d/webApps/1:847130926240:web:dabb6b274fe6355fa2bdc5/config [none]
+[debug] [2021-08-28T20:05:10.637Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challange-6c24d/webApps/1:847130926240:web:dabb6b274fe6355fa2bdc5/config 200
+[debug] [2021-08-28T20:05:10.637Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challange-6c24d/webApps/1:847130926240:web:dabb6b274fe6355fa2bdc5/config {"projectId":"challange-6c24d","appId":"1:847130926240:web:dabb6b274fe6355fa2bdc5","storageBucket":"challange-6c24d.appspot.com","locationId":"us-central","apiKey":"AIzaSyCP53nNyQxGysTts8jpQifvvKHKy69LkcI","authDomain":"challange-6c24d.firebaseapp.com","messagingSenderId":"847130926240","measurementId":"G-B4KW65G669"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-08-28T20:05:10.864Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-08-28T20:05:10.864Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-08-28T20:05:10.864Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\DEEP RAJ\\.cache\\firebase\\emulators\\ui-v1.5.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\DEEP RAJ\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.5.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-08-28T20:05:11.200Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\DEEP RAJ\Desktop\29-June-2021-Amazon-Full-Stack\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\DEEP RAJ\\Desktop\\29-June-2021-Amazon-Full-Stack\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2021-08-28T20:05:11.439Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-08-28T20:05:11.440Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-08-28T20:05:11.440Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-08-28T20:05:11.440Z] [worker-~diagnostic~-0429605f-ff51-46a5-a2cf-101a49c14270]: Assigning socketPath: \\?\pipe\C:\Users\DEEP RAJ\Desktop\29-June-2021-Amazon-Full-Stack\amazon-clone\functions\15460 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-0429605f-ff51-46a5-a2cf-101a49c14270]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\DEEP RAJ\\Desktop\\29-June-2021-Amazon-Full-Stack\\amazon-clone\\functions\\15460"}}
+[debug] [2021-08-28T20:05:11.441Z] [worker-~diagnostic~-0429605f-ff51-46a5-a2cf-101a49c14270]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-0429605f-ff51-46a5-a2cf-101a49c14270]: BUSY"}}
