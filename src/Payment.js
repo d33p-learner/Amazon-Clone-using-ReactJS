@@ -31,6 +31,7 @@ function Payment() {
         //stripe expects the total in currency subumits thatswhy for dollars we do * 100
         url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
       });
+      // console.log(user.uid); Kuvgc6VMGDSSBPvz5bnrLwB1NU22 
       setClientSecret(response.data.clientSecret);
     };
 
@@ -114,6 +115,7 @@ function Payment() {
                 image={item.image}
                 price={item.price}
                 rating={item.rating}
+                hiddenButton={false}
               />
             ))}
           </div>
@@ -139,8 +141,9 @@ function Payment() {
                   prefix={"$"}
                 />
 
+
                 <button disabled={processing || disabled || succeeded}>
-                  <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
+                  <span>{basket!=0 && (processing ? <p>Processing</p> : "Buy Now")}</span>
                 </button>
               </div>
 
