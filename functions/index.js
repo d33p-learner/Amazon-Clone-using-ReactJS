@@ -2,7 +2,7 @@ const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const stripe = require("stripe")(
-  "sk_test_51JTQEzLlOd1E5xOZ8VnMJFeHBqKKfUTd3snA6v8DmncWR8x4dHcF8K62kNjUoyD8tT02DHqzAGdzLS0DGVddqG99001f2qiPcA"
+    "sk_test_51JTQEzLlOd1E5xOZ8VnMJFeHBqKKfUTd3snA6v8DmncWR8x4dHcF8K62kNjUoyD8tT02DHqzAGdzLS0DGVddqG99001f2qiPcA"
 );
 
 // API
@@ -11,7 +11,7 @@ const stripe = require("stripe")(
 const app = express();
 
 // - Middlewares
-app.use(cors({ origin: true }));
+app.use(cors({origin: true}));
 app.use(express.json());
 
 
