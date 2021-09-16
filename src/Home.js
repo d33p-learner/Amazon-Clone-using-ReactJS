@@ -1,8 +1,15 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import { useStateValue } from "./StateProvider";
+import Login from "./Login";
+import { itemsArray } from "./Items";
+import { CardColumns } from "react-bootstrap";
+
 
 function Home() {
+  const [state, dispatch] = useStateValue();
+  const { basket, user } = state;
   return (
     <div className="home">
       <div className="home__container">
@@ -12,8 +19,17 @@ function Home() {
           alt=""
         />
       </div>
+      {itemsArray.map((item) => (
+          <Product
+          id={item.id}
+          title={item.title}
+          price={item.price}
+          rating={item.rating}
+          image={item.image}
+          />
+        ))}
 
-      <div className="home__row">
+      {/* <div className="home__row">
         <Product
           id="12321341"
           title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
@@ -28,7 +44,6 @@ function Home() {
           rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
         />
-        {/* Product */}
       </div>
 
       <div className="home__row">
@@ -53,7 +68,7 @@ function Home() {
           rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
         />
-      </div>
+      </div> 
 
       <div className="home__row">
         <Product
@@ -63,7 +78,8 @@ function Home() {
           rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
         />
-      </div>
+      </div> */}
+      {!user && <Login />}
     </div>
   );
 }

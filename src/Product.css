@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin: 10px;
+  margin: 10px 300px;
   padding: 20px;
-  width: 100%;
+  width: 50%;
   max-height: 400px;
   min-width: 100px;
   background-color: white;

@@ -3,10 +3,11 @@ import "./Checkout.css";
 import Subtotal from "./Subtotal";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
+import Login from "./Login";
 
 function Checkout() {
   const [state, dispatch] = useStateValue();
-  const { basket } = state;
+  const { basket, user } = state;
   return (
     <div className="checkout">
       <div className="checkout__left">
@@ -32,7 +33,8 @@ function Checkout() {
       </div>
 
       <div className="checkout__right">
-        <Subtotal />
+        {user && <Subtotal />}
+        {!user && <Login />}
       </div>
     </div>
   );

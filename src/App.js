@@ -11,6 +11,8 @@ import { useStateValue } from "./StateProvider";
 import Payment from "./Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import SearchPage from "./SearchPage";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const promise = loadStripe(
   "pk_test_51JTQEzLlOd1E5xOZYtxA2Z8FpLueVwZlG6FM5oydTf7XmPNxoZuW5rAnHEgHmAfS4BHhQEo57PgLX4LCVWFIvCSZ00liE3EIxX"
@@ -44,6 +46,8 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+
+          <Route path="/search/:keyword" component={SearchPage} exact/>
 
           <Route path="/orders">
             <Header />

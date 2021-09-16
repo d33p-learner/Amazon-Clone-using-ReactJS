@@ -1,10 +1,11 @@
 import React from "react";
 import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
+import { Route } from 'react-router-dom'
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import SearchBox from './SearchBox';
 
 function Header() {
   const [state, dispatch] = useStateValue();
@@ -14,6 +15,7 @@ function Header() {
       auth.signOut();
     }
   };
+
 
   return (
     <div className="header">
@@ -26,8 +28,7 @@ function Header() {
       </Link>
 
       <div className="header__search">
-        <input className="header__searchInput" type="text" />
-        <SearchIcon className="header__searchIcon" />
+        <Route render={({ history }) => <SearchBox history={history} />} />
       </div>
       <div className="header__nav">
         <Link to={!state.user && "/login"}>

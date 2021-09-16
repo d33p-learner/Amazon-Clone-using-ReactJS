@@ -1,6 +1,9 @@
+// import { itemsArray } from "./Items";
+
 export const initialState = {
   basket: [],
   user: null,
+  totalItems: []
 };
 
 export const getBasketTotal = (basket) =>
